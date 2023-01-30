@@ -91,24 +91,62 @@ body {
     height: auto;
     overflow: hidden;
   }
-  .bioHeader{
-    display:flex;
+  
+ .bioBody{
+    display: flex;
     flex-direction: column;
-    padding-top: 80px;
-    margin: 3%;
-    width: 50%;
-    color: rgb(128, 88, 86);
   }
   #bioTitle{
-
+    color: rgb(128, 88, 86);
+    max-width: 768px;
+    margin: auto;
+    padding-top: 5%;
   }
   #bioDescription{
     padding-top: 3%;
-
+    margin: 5%;
+    font-size: larger;
   }
 
+  .topImages{
+    margin-left: 3%;
+  }
+
+  #raceAcrossTheWorld02{
+    width: 40%;
+    margin-left: 10%;
+    opacity: 90%;
+    margin-top: 10%;
+    object-fit: fill;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  #cheesecake{
+    width: 32.5%;
+    border-radius: 25px;
+  }
+
+  #beachHoliday{
+    width: 32.5%;
+    border-radius: 25px;
+    margin-left: 1%;
+  }
+
+  #expedia{
+    width: 25%;
+    border-radius: 25px;
+    margin-left: 1%;
+  }
   
-  #designTemplate{}
+  #DIY{
+    width: 38%;
+    border-radius: 25px;
+    flex-wrap: nowrap ;
+
+}
+
+
 }
 
 
