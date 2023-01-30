@@ -1,50 +1,114 @@
 
+/* What are common breakpoints? Common breakpoints are 
+320px — 480px for mobile devices,
+481px — 768px for iPads & tablets, 
+769px — 1024px for small screens like laptop
+*/
 
 body {
-background-color: antiquewhite;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  background-color: antiquewhite;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-
-@media only screen and (max-width: 667px){ 
-.navbar{
-display: flex;
-justify-content: space-around;
-list-style-type: none;
-padding-left:0px ;
-color: rgb(82, 79, 79);
-}
-.navbar li:hover{
-  text-decoration: underline 5px rgb(249,249,255);
-}
-
-.home{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 80px;
-}
-
-#portfolioHeader{
-  font-size: larger;
-  margin-top: 0px;
-  color: rgb(82, 79, 79);
-}
-
-#myName{
-font-size: xx-large;
-margin-top: 0px;
-color: rgb(82, 79, 79);
-}
-
-#livingroom{
-  width: 158%;
-  height: auto;
-  margin-top: 63px;
-}
-}
-
-@media only screen and (min-width: 1024px){ 
-  body {
-    background-color: white;
+@media only screen and (min-width: 320px)and (max-width: 480px) { 
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left:0px ;
+    color: rgb(82, 79, 79);
+    font-weight: 100;
+    font-size: large;
   }
 }
+
+
+@media only screen and (min-width: 481px)and (max-width: 768px){ 
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left:0px ;
+    font-weight: 300;
+    font-size: x-large;
+    text-decoration: 5px rgb(249,249,255);
+    color: rgb(82, 79, 79);
+  }
+}
+
+@media only screen and  (min-width: 320px) and (max-width: 768px) {
+  .navbar li:link{
+    text-decoration: underline 5px rgb(249,249,255);
+    color: rgb(82, 79, 79);
+    cursor: pointer;
+  }
+  .navbar li:hover{
+    text-decoration: underline 5px rgb(249,249,255);
+    color: rgb(82, 79, 79);
+
+  }
+
+  .navbar li:active{
+    text-decoration: underline 5px rgb(12, 12, 217);
+    color: rgb(82, 79, 79);
+
+  }
+
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 768px;
+    margin-left: 0%;
+  }
+
+  #portfolioHeader{
+    font-size: larger;
+    margin-top: 0px;
+    /* color: rgb(82, 79, 79); */
+    color: rgb(128, 88, 86);
+    font-weight: 300;
+  }
+
+  #myName{
+    font-size: xx-large;
+    margin-top: 0px;
+    /* color: rgb(82, 79, 79); */
+    color: rgb(128, 88, 86);
+    letter-spacing: 5px;
+  }
+
+  #livingroom{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  #toilet{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  .bioHeader{
+    display:flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin: 3%;
+    width: 50%;
+    color: rgb(128, 88, 86);
+  }
+  #bioTitle{
+
+  }
+  #bioDescription{
+    padding-top: 3%;
+
+  }
+
+  
+  #designTemplate{}
+}
+
+
