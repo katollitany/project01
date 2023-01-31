@@ -4,225 +4,191 @@
 481px — 768px for iPads & tablets, 
 769px — 1024px for small screens like laptop
 */
-
+*{
+box-sizing: border-box;
+}
 body {
   background-color: antiquewhite;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
-@media only screen and (min-width: 320px)and (max-width: 480px) { 
-  .navbar{
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left:0px ;
+  color: rgb(82, 79, 79);
+  font-weight: 100;
+  font-size: large;
+}
+
+/* home */
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  max-width: 768px;
+  margin-left: 0%;
+}
+
+#portfolioHeader{
+  font-size: larger;
+  margin-top: 0px;
+  color: rgb(128, 88, 86);
+  font-weight: 300;
+}
+
+#myName{
+  font-size: xx-large;
+  margin-top: 0px;
+  color: rgb(128, 88, 86);
+  letter-spacing: 5px;
+}
+
+#livingroom{
+  width: 100%;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+}
+#toilet{
+  width: 100%;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+}
+/* home */
+
+/* bio */
+.bio-body{
+  display: flex;
+  flex-direction: column;
+}
+#bio-title{
+  color: rgb(128, 88, 86);
+  max-width: 768px;
+  margin: auto;
+  padding-top: 5%;
+}
+#bio-description{
+  padding-top: 3%;
+  margin: 5%;
+  font-size: larger;
+  color: rgb(128, 88, 86);
+}
+
+.bio-header-images{
+  margin-left: 3%;
+}
+
+#race-across-the-world-img{
+  width: 40%;
+  margin-left: 10%;
+  opacity: 90%;
+  margin-top: 10%;
+  object-fit: fill;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+#cheesecake-img{
+  width: 32.5%;
+  border-radius: 25px;
+}
+
+#beach-holiday-img{
+  width: 32.5%;
+  border-radius: 25px;
+  margin-left: 1%;
+}
+
+#expedia-logo-img{
+  width: 25%;
+  border-radius: 25px;
+  margin-left: 1%;
+}
+
+#diy-img{
+  width: 38%;
+  border-radius: 25px;
+  flex-wrap: nowrap ;
+
+}
+/* bio */
+
+/* experience */
+
+#black-girls-code-img{
+  display: flex;
+  margin: auto;
+  width: 40%;
+  height: auto;
+}
+
+/* experience */
+
+/* portfolio */
+  .container{
     display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-left:0px ;
-    color: rgb(82, 79, 79);
-    font-weight: 100;
-    font-size: large;
-  }
-}
-
-
-@media only screen and (min-width: 481px)and (max-width: 768px){ 
-  .navbar{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-left:0px ;
-    font-weight: 300;
-    font-size: x-large;
-    text-decoration: 5px rgb(249,249,255);
-    color: rgb(82, 79, 79);
-  }
-}
-
-@media only screen and  (min-width: 320px) and (max-width: 768px) {
-  .navbar li:link{
-    text-decoration: underline 5px rgb(249,249,255);
-    color: rgb(82, 79, 79);
-    cursor: pointer;
-  }
-  .navbar li:hover{
-    text-decoration: underline 5px rgb(249,249,255);
-    color: rgb(82, 79, 79);
-
-  }
-
-  .navbar li:active{
-    text-decoration: underline 5px rgb(12, 12, 217);
-    color: rgb(82, 79, 79);
-
-  }
-
-  .home{
+    flex-direction: column;
+    height: 100vh;
+  } 
+  .main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-    max-width: 768px;
-    margin-left: 0%;
-  }
-
-  #portfolioHeader{
-    font-size: larger;
-    margin-top: 0px;
-    /* color: rgb(82, 79, 79); */
-    color: rgb(128, 88, 86);
-    font-weight: 300;
-  }
-
-  #myName{
-    font-size: xx-large;
-    margin-top: 0px;
-    /* color: rgb(82, 79, 79); */
-    color: rgb(128, 88, 86);
-    letter-spacing: 5px;
-  }
-
-  #livingroom{
-    width: 100%;
-    margin: auto;
-    height: auto;
-    overflow: hidden;
-  }
-  #toilet{
-    width: 100%;
-    margin: auto;
-    height: auto;
-    overflow: hidden;
-  }
-  
- .bioBody{
-    display: flex;
-    flex-direction: column;
-  }
-  #bioTitle{
-    color: rgb(128, 88, 86);
-    max-width: 768px;
-    margin: auto;
-    padding-top: 5%;
-  }
-  #bioDescription{
-    padding-top: 3%;
-    margin: 5%;
-    font-size: larger;
+    flex: 1;
+    padding: 10px;
     color: rgb(128, 88, 86);
   }
 
-  .bioTopImages{
-    margin-left: 3%;
+ .portfolio-images-text{
+    text-align: center;
   }
 
-  #raceAcrossTheWorld02{
-    width: 40%;
-    margin-left: 10%;
-    opacity: 90%;
-    margin-top: 10%;
-    object-fit: fill;
-    overflow: hidden;
-    border-radius: 25px;
-  }
-
-  #cheesecake{
-    width: 32.5%;
-    border-radius: 25px;
-  }
-
-  #beachHoliday{
-    width: 32.5%;
-    border-radius: 25px;
-    margin-left: 1%;
-  }
-
-  #expedia{
-    width: 25%;
-    border-radius: 25px;
-    margin-left: 1%;
-  }
-
-  #DIY{
-    width: 38%;
-    border-radius: 25px;
-    flex-wrap: nowrap ;
-
-  }
-
-  .experienceTitles{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: rgb(128, 88, 86);
-  }
-  .experienceBody{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  #experienceDescrip{
-    color: rgb(128, 88, 86);
-  }
-
-  #experiencePara{
-    width: 100%;
-    color: rgb(128, 88, 86);
-  }
-
-  #blackGirlsCodeImg{
-    display: flex;
-    margin: auto;
-    width: 40%;
-    height: auto;
-  }
-
-  .portfolioMain{
-    max-width: 768px;
-    margin-left: 100px;
-  }
-
-  #portfolioImagesText{
+  .portfolio-img{
     max-width: 100%;
+    height: auto;
   }
 
-  #sneakerHead{
-    max-width: 550px;
-    height: auto;
-    overflow: hidden; 
-  }
 
-  #travelBlog{
-    max-width: 550px;
-    height: auto;
-    overflow: hidden; 
-  }
-  
+/* portfolio */
+
+.social-media-icon{
+  width: 50px;
+  height: auto;
 }
+
+.footer {
+  
+  display: flex;
+  flex-direction: row;
+  color: rgb(82, 79, 79);
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  align-items: flex-end;
+  margin-bottom: 0;
+
+
+}
+@media only screen and (min-width: 481px)and (max-width: 768px){ 
+  .navbar{
+    font-weight: 300;
+    font-size: x-large;
+  }
+}
+
 @media only screen and (min-width: 769px){ 
   .navbar{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding-left:0px ;
-    color: rgb(82, 79, 79);
-    font-weight: 500;
-    font-size:x-large;
+    font-weight: 300;
+    font-size: xx-large;
   }
+}
+@media only screen and (min-width: 769px){ 
 
-  .navbar li:link{
-    text-decoration: underline 5px rgb(249,249,255);
-    color: rgb(82, 79, 79);
-    cursor: pointer;
-  }
-  .navbar li:hover{
-    text-decoration: underline 5px rgb(249,249,255);
-    color: rgb(82, 79, 79);
-
-  }
-
-  .navbar li:active{
-    text-decoration: underline 5px rgb(12, 12, 217);
-    color: rgb(82, 79, 79);
-
-  }
   .home{
     display: flex;
     flex-direction: column;
@@ -267,18 +233,16 @@ padding-top: 4%;
   #beachHoliday{
     margin-left: 60px;
   }
-}
-#socialMediaIcon{
-  width: 50px;
-  height: auto;
-}
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  color: rgb(82, 79, 79);
-  justify-content: space-around;
-  list-style-type: none;
+  .experienceUl{
+    padding-left: 20px;
+  }
 
+  
 }
 
+@media only screen and (max-width: 425px){
+  .experienceTitles{
+    font-size: 12px;
+  }
+}
