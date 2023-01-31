@@ -109,7 +109,7 @@ body {
     color: rgb(128, 88, 86);
   }
 
-  .topImages{
+  .bioTopImages{
     margin-left: 3%;
   }
 
@@ -173,6 +173,27 @@ body {
     width: 40%;
     height: auto;
   }
+
+  .portfolioMain{
+    max-width: 768px;
+    margin-left: 100px;
+  }
+
+  #portfolioImagesText{
+    max-width: 100%;
+  }
+
+  #sneakerHead{
+    max-width: 550px;
+    height: auto;
+    overflow: hidden; 
+  }
+
+  #travelBlog{
+    max-width: 550px;
+    height: auto;
+    overflow: hidden; 
+  }
   
 }
 @media only screen and (min-width: 769px){ 
@@ -235,8 +256,18 @@ padding-top: 4%;
   #toilet{
    display: none;
   }
-}
 
+  
+}
+@media only screen and (max-width: 320px){
+  #DIY{
+    display: none;
+  }
+
+  #beachHoliday{
+    margin-left: 60px;
+  }
+}
 #socialMediaIcon{
   width: 50px;
   height: auto;
