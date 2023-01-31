@@ -5,7 +5,7 @@
 769px — 1024px for small screens like laptop
 */
 *{
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   background-color: antiquewhite;
@@ -23,98 +23,74 @@ body {
   font-size: large;
 }
 
-/* home */
-.home{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-  max-width: 768px;
-  margin-left: 0%;
+.navbar a{
+  text-decoration: none;
 }
+.navbar a:hover{
+  text-decoration: underline blueviolet;
+  color: brown
+}
+#active-page{
+  color: brown;
+}
+/* home */
 
-#portfolioHeader{
+#main-title{
   font-size: larger;
   margin-top: 0px;
-  color: rgb(128, 88, 86);
   font-weight: 300;
 }
 
-#myName{
+#my-name{
   font-size: xx-large;
   margin-top: 0px;
-  color: rgb(128, 88, 86);
   letter-spacing: 5px;
 }
 
-#livingroom{
+#livingroom-img{
   width: 100%;
-  margin: auto;
-  height: auto;
-  overflow: hidden;
-}
-#toilet{
-  width: 100%;
-  margin: auto;
-  height: auto;
-  overflow: hidden;
 }
 /* home */
 
 /* bio */
-.bio-body{
+.bio-content{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
-#bio-title{
-  color: rgb(128, 88, 86);
-  max-width: 768px;
-  margin: auto;
-  padding-top: 5%;
-}
-#bio-description{
-  padding-top: 3%;
-  margin: 5%;
+.bio-description{
   font-size: larger;
-  color: rgb(128, 88, 86);
 }
 
-.bio-header-images{
-  margin-left: 3%;
+.bio-header-images img{
+  border-radius: 25px;
+  margin: 5px;
+}
+.bio-header-images {
+  display: flex;
+  justify-content: center;
 }
 
 #race-across-the-world-img{
   width: 40%;
-  margin-left: 10%;
   opacity: 90%;
-  margin-top: 10%;
-  object-fit: fill;
-  overflow: hidden;
-  border-radius: 25px;
 }
 
 #cheesecake-img{
   width: 32.5%;
-  border-radius: 25px;
 }
 
 #beach-holiday-img{
   width: 32.5%;
-  border-radius: 25px;
-  margin-left: 1%;
 }
 
 #expedia-logo-img{
   width: 25%;
-  border-radius: 25px;
-  margin-left: 1%;
 }
 
 #diy-img{
   width: 38%;
-  border-radius: 25px;
-  flex-wrap: nowrap ;
-
 }
 /* bio */
 
@@ -157,12 +133,12 @@ body {
 /* portfolio */
 
 .social-media-icon{
-  width: 50px;
-  height: auto;
+  color: brown;
+  font-size: 50px;
+ 
 }
 
 .footer {
-  
   display: flex;
   flex-direction: row;
   color: rgb(82, 79, 79);
@@ -171,9 +147,8 @@ body {
   padding: 0;
   align-items: flex-end;
   margin-bottom: 0;
-
-
 }
+
 @media only screen and (min-width: 481px)and (max-width: 768px){ 
   .navbar{
     font-weight: 300;
