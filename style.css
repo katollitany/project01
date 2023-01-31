@@ -175,5 +175,79 @@ body {
   }
   
 }
+@media only screen and (min-width: 769px){ 
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left:0px ;
+    color: rgb(82, 79, 79);
+    font-weight: 500;
+    font-size:x-large;
+  }
 
+  .navbar li:link{
+    text-decoration: underline 5px rgb(249,249,255);
+    color: rgb(82, 79, 79);
+    cursor: pointer;
+  }
+  .navbar li:hover{
+    text-decoration: underline 5px rgb(249,249,255);
+    color: rgb(82, 79, 79);
+
+  }
+
+  .navbar li:active{
+    text-decoration: underline 5px rgb(12, 12, 217);
+    color: rgb(82, 79, 79);
+
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+  #portfolioHeader{
+    font-size: 40px;
+    color: rgb(128, 88, 86);
+    font-weight: 300;
+    margin-bottom: 0%;
+  }
+
+  #myName{
+    font-size: 48px;
+    /* color: rgb(82, 79, 79); */
+    color: rgb(128, 88, 86);
+    letter-spacing: 5px;
+  }
+
+  #livingroom{
+padding-top: 4%;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  #toilet{
+   display: none;
+  }
+}
+
+#socialMediaIcon{
+  width: 50px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  color: rgb(82, 79, 79);
+  justify-content: space-around;
+  list-style-type: none;
+
+}
 
