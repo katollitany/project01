@@ -27,7 +27,7 @@ body {
   text-decoration: none;
 }
 .navbar a:hover{
-  text-decoration: underline blueviolet;
+  text-decoration: underline rgb(227, 137, 137);
   color: brown
 }
 #active-page{
@@ -62,20 +62,27 @@ body {
 .bio-description{
   font-size: larger;
 }
-
-.bio-header-images img{
-  border-radius: 25px;
-  margin: 5px;
-}
 .bio-header-images {
   display: flex;
   justify-content: center;
 }
 
+.bio-header-images img{
+  border-radius: 25px;
+  margin: 5px;
+  box-shadow: 0px 3px 2px #000;
+}
+
+.bio-header-images img:hover{
+  box-shadow:  0px 8px 30px;
+  transition: all 300ms ease-in-out;
+  border-radius: 5px;
+}
+
 #race-across-the-world-img{
   width: 40%;
-  opacity: 90%;
 }
+
 
 #cheesecake-img{
   width: 32.5%;
@@ -92,6 +99,7 @@ body {
 #diy-img{
   width: 38%;
 }
+
 /* bio */
 
 /* experience */
