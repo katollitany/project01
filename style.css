@@ -39,7 +39,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-size: cover;
 }
+
 #main-title{
   font-size: larger;
   margin-top: 0px;
@@ -73,8 +75,11 @@ body {
 
 .bio-header-images img{
   border-radius: 25px;
-  margin: 5px;
   box-shadow: 0px 3px 2px #000;
+}
+.bio-header-images a {
+  padding: 5px;
+  width: 100%;
 }
 
 .bio-header-images img:hover{
@@ -82,26 +87,35 @@ body {
   transition: all 300ms ease-in-out;
   border-radius: 5px;
 }
-
-#race-across-the-world-img{
+#race-across-the-world-link{
   width: 40%;
 }
-
-
+#race-across-the-world-img{
+  width: 100%;
+}
+#cheesecake-link{
+  width: 32.5%;
+}
 #cheesecake-img{
+  width: 100%;
+}
+#beach-holiday-link{
   width: 32.5%;
 }
-
 #beach-holiday-img{
-  width: 32.5%;
+  width: 100%;
 }
-
+#expedia-logo-link{
+  width: 25%; 
+}
 #expedia-logo-img{
-  width: 25%;
+  width: 100%;
 }
-
-#diy-img{
+#diy-link{
   width: 38%;
+}
+#diy-img{
+  width: 100%;
 }
 
 /* bio */
@@ -167,16 +181,20 @@ body {
     font-weight: 300;
     font-size: x-large;
   }
+  #main-title{
+    font-size: 100px;
+  }
+  #my-name{
+    font-size: 150px;
+  }
 }
+
 
 @media only screen and (min-width: 769px){ 
   .navbar{
     font-weight: 300;
     font-size: xx-large;
   }
-}
-@media only screen and (min-width: 769px){ 
-
   .home{
     display: flex;
     flex-direction: column;
@@ -233,4 +251,8 @@ padding-top: 4%;
   .experienceTitles{
     font-size: 12px;
   }
+}
+@media only screen and (min-width: 1024px){ 
+   
+  
 }
