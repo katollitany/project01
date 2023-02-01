@@ -13,6 +13,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
+
 .navbar{
   display: flex;
   justify-content: space-around;
@@ -21,6 +22,7 @@ body {
   color: rgb(82, 79, 79);
   font-weight: 100;
   font-size: large;
+  cursor: pointer;
 }
 
 .navbar a{
@@ -28,37 +30,68 @@ body {
 }
 .navbar a:hover{
   text-decoration: underline rgb(227, 137, 137);
-  color: brown
+  color: brown;
+  cursor: pointer;
 }
 #active-page{
   color: brown;
+  cursor: pointer;
 }
 /* home */
-.index-container{
+.home-container{
   background-image: url(https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-size: cover;
+}
+
+.home-main{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-title, #my-name{
+  display: block;
+  text-transform: uppercase;  
+  margin: 10px;
 }
 
 #main-title{
+  letter-spacing: 8px;
+  position: relative;
+  animation: text 3s 1;
   font-size: larger;
-  margin-top: 0px;
   font-weight: 300;
   color: whitesmoke;
 }
 
 #my-name{
   font-size: xx-large;
-  margin-top: 0px;
   letter-spacing: 5px;
   color: whitesmoke;
+}
+
+@keyframes text {
+  0%{
+  }
+  30%{
+    letter-spacing: 2px;
+  }
+  85%{
+    letter-spacing: 8px;
+  }
 }
 
 /* home */
 
 /* bio */
+
 .bio-content{
   display: flex;
   flex-direction: column;
@@ -74,7 +107,7 @@ body {
 }
 
 .bio-header-images img{
-  border-radius: 25px;
+  border-radius: 5px;
   box-shadow: 0px 3px 2px #000;
 }
 .bio-header-images a {
@@ -83,7 +116,7 @@ body {
 }
 
 .bio-header-images img:hover{
-  box-shadow:  0px 8px 30px;
+  box-shadow:  0px 8px 30px #000;
   transition: all 300ms ease-in-out;
   border-radius: 5px;
 }
@@ -121,6 +154,12 @@ body {
 /* bio */
 
 /* experience */
+.experience-titles{
+  text-align: center;
+}
+.expertise-list{
+  padding-left: 10px;
+}
 
 #black-girls-code-img{
   display: flex;
@@ -180,79 +219,82 @@ body {
   .navbar{
     font-weight: 300;
     font-size: x-large;
+    cursor: pointer;
   }
-  #main-title{
-    font-size: 100px;
-  }
-  #my-name{
-    font-size: 150px;
-  }
+  
 }
-
-
 @media only screen and (min-width: 769px){ 
   .navbar{
     font-weight: 300;
     font-size: xx-large;
+    cursor: pointer;
+  } 
+} 
+@media only screen and (min-width: 1024px){
+  .navbar{
+    font-size: xx-large;
+    justify-content: space-evenly;
   }
-  .home{
+  main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    max-width: 100%;
-    margin-left: 0%;
+    align-items: space-between;
+  }
+  .bio-description{
+    font-size: xx-large;
   }
 
-  #portfolioHeader{
-    font-size: 40px;
-    color: rgb(128, 88, 86);
-    font-weight: 300;
-    margin-bottom: 0%;
-  }
-
-  #myName{
-    font-size: 48px;
-    /* color: rgb(82, 79, 79); */
-    color: rgb(128, 88, 86);
-    letter-spacing: 5px;
-  }
-
-  #livingroom{
-padding-top: 4%;
+  main figure {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    margin: auto;
-    height: auto;
-    overflow: hidden;
-  }
-  #toilet{
-   display: none;
+    margin: 0;
   }
 
+  .bio-header-images {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
   
-}
-@media only screen and (max-width: 320px){
-  #DIY{
+  #main-title{
+    font-size: 50px;
+  }
+  #my-name{
+    font-size: 70px;
+  }
+  .experience-main{
+    width: 77%;
+    margin: auto;
+    font-size: 19px;
+    flex-direction: row;
+
+  }
+  .experience-main section {
+    flex: 1;
+  }
+
+  #black-girls-code-background-img{
+    background-image: url(https://lever-client-logos.s3.us-west-2.amazonaws.com/0dd2b62b-4a39-4e5d-bda6-33eb1ce4e8f9-1644250396869.png);
+    background-size: 150px;
+    background-repeat: repeat-x;
+    height: 146px;
+    width: 160%;
+  }
+  #black-girls-code-img{
     display: none;
   }
 
-  #beachHoliday{
-    margin-left: 60px;
+  .portfolio-main{
+    flex-direction: row;
+    justify-content: space-around;
   }
-
-  .experienceUl{
-    padding-left: 20px;
+  .porfolio-img-1024px{
+    max-width: 500px;
   }
-
+}
   
-}
 
-@media only screen and (max-width: 425px){
-  .experienceTitles{
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 1024px){ 
-   
-  
-}
+
