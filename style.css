@@ -34,7 +34,9 @@ body {
   color: brown;
 }
 /* home */
-
+.container{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg")
+}
 #main-title{
   font-size: larger;
   margin-top: 0px;
@@ -47,8 +49,7 @@ body {
   letter-spacing: 5px;
 }
 
-#livingroom-img{
-  width: 100%;
+#wavy-background{
 }
 /* home */
 
