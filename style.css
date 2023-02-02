@@ -1,9 +1,4 @@
 
-/* What are common breakpoints? Common breakpoints are 
-320px — 480px for mobile devices,
-481px — 768px for iPads & tablets, 
-769px — 1024px for small screens like laptop
-*/
 *{
   box-sizing: border-box;
 }
@@ -53,7 +48,7 @@ body {
   color: brown;
   cursor: pointer;
 }
-/* home */
+
 .home-container{
   background-image: url(https://static.vecteezy.com/system/resources/previews/003/988/578/original/psychedelic-groovy-retro-background-vector.jpg);
   background-size: cover;
@@ -104,9 +99,6 @@ body {
   }
 }
 
-/* home */
-
-/* bio */
 
 .bio-content{
   display: flex;
@@ -167,9 +159,6 @@ body {
   width: 100%;
 }
 
-/* bio */
-
-/* experience */
 .experience-titles{
   text-align: center;
 }
@@ -184,9 +173,6 @@ body {
   height: auto;
 }
 
-/* experience */
-
-/* portfolio */
   .container{
     display: flex;
     flex-direction: column;
@@ -211,8 +197,6 @@ body {
     height: auto;
   }
 
-
-/* portfolio */
 
 .social-media-icon{
   color: brown;
